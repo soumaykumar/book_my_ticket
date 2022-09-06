@@ -29,7 +29,7 @@ export default function Register() {
     ) {
       if (register.email.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)) {
         axios
-          .post("http://localhost:5000/auth/register", register)
+          .post("https://bookmy-ticket.herokuapp.com/auth/register", register)
           .then((res) => {
             setAlert(res.data.message);
           })

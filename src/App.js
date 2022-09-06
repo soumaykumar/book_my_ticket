@@ -25,7 +25,7 @@ function App() {
   React.useEffect(() => {
     const token = localStorage.getItem("token");
     axios
-      .get(`http://localhost:5000/auth/validate/${token}`)
+      .get(`https://bookmy-ticket.herokuapp.com/auth/validate/${token}`)
       .then((res) => {
         if (res.data.isLogged) {
           console.log(res.data);
