@@ -22,7 +22,7 @@ export default function BookTicket(props) {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    
     axios
       .post("https://bookmy-ticket.herokuapp.com/ticket/issueTicket", Ticket)
       .then((res) => {

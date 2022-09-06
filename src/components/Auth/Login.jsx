@@ -20,7 +20,6 @@ export default function Login(props) {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
     axios
       .post(`https://bookmy-ticket.herokuapp.com/auth/login`, login)
       .then((res) => {

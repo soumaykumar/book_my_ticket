@@ -12,7 +12,7 @@ export default function MyBookings(props) {
       .catch((err) => {
         console.log(err);
       });
-  }, []);
+  }, [props.user.email]);
   return (
     <div className="container mt-5">
       <div className="row">
