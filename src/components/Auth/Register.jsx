@@ -21,6 +21,7 @@ export default function Register() {
   };
 
   const handleSubmit = (e) => {
+    e.preventDefault();
     if (
       register.email !== "" &&
       register.password !== "" &&
