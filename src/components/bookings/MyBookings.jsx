@@ -5,7 +5,7 @@ export default function MyBookings(props) {
   const [mybooking, setMyBookings] = React.useState([]);
   React.useEffect(() => {
     axios
-      .get(`https://bookmy-ticket.herokuapp.com/ticket/retrieveAll/${props.user.email}`)
+      .get(`https://bookmyapp.onrender.com/ticket/retrieveAll/${props.user.email}`)
       .then((res) => {
         setMyBookings(res.data);
       })

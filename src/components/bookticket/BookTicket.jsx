@@ -24,7 +24,7 @@ export default function BookTicket(props) {
   const handleSubmit = (e) => {
     
     axios
-      .post("https://bookmy-ticket.herokuapp.com/ticket/issueTicket", Ticket)
+      .post("https://bookmyapp.onrender.com/ticket/issueTicket", Ticket)
       .then((res) => {
         if (res.data.status === "success") {
           setTicketNo(res.data.id);

@@ -22,7 +22,7 @@ export default function Login(props) {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post(`https://bookmy-ticket.herokuapp.com/auth/login`, login)
+      .post(`https://bookmyapp.onrender.com/auth/login`, login)
       .then((res) => {
         setAlert(res.data.message);
         if (res.data.message === "Logged In Successfully") {
